@@ -623,7 +623,7 @@ function processDocuMindQuery(queryText) {
   } else if (lower.includes('karthick') || lower.includes('cgpa') || lower.includes('degree') || lower.includes('college') || lower.includes('education') || lower.includes('srm')) {
     matchPercentage = '99.2%';
     citation = `<strong style="color: #9333EA;">[Page 1, Section: Education]:</strong><br>"B.Tech Computer Science &amp; Engineering (AI &amp; ML), SRM Institute of Science and Technology, Chennai. CGPA: 8.24 — First Class with Distinction (Graduated Aug 2026)."`;
-    reply = `Based on <strong>[Karthick_S_Resume.pdf, Page 1]</strong>, Karthick holds a <strong>B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</strong> from <strong>SRM Institute of Science and Technology</strong> with a <strong>8.24 CGPA (First Class with Distinction)</strong>.`;
+    reply = `Based on <strong>[Karthick_S_AI_ML_Profile.pdf, Page 1]</strong>, Karthick holds a <strong>B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</strong> from <strong>SRM Institute of Science and Technology</strong> with a <strong>8.24 CGPA (First Class with Distinction)</strong>.`;
   } else if (lower.includes('voice') || lower.includes('latency') || lower.includes('groq') || lower.includes('llama') || lower.includes('pizza')) {
     matchPercentage = '96.5%';
     citation = `<strong style="color: #9333EA;">[Page 2, Section: Architecture Flow]:</strong><br>"Browser Web Speech APIs handle audio capture, dispatching stateless turn history to FastAPI backend powered by Groq-hosted LLaMA 3.3 70B generating responses in ~120ms."`;

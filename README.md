@@ -19,7 +19,7 @@
 - **Comprehensive Skills Matrix**: Categorized grid of Machine Learning, Computer Vision, Generative AI, Backend, Databases, and Developer Tools.
 - **Academic Distinction & Work Experience**: Showcases B.Tech CSE (AI & ML) from SRM IST (8.24 CGPA — First Class with Distinction) and internships at Trija Mind & Internways.
 - **Dual Theme Support**: Warm Editorial Cream ☀️ & Cybernetic Midnight Dark 🌙 with persistent `localStorage` preference.
-- **Interactive Modals & Utilities**: Architecture deep dives, one-click copy for email/phone with toast alerts, and direct resume download.
+- **Interactive Modals & Utilities**: Architecture deep dives, one-click copy for email with toast alerts, and direct contact form.
 
 ---
 
@@ -32,8 +32,6 @@ Portfolio/
 ├── script.js                   # Typewriter, theme toggle, AI playground, modals
 ├── README.md                   # Documentation and deployment guide
 └── assets/
-    ├── docs/
-    │   └── Karthick_S_Resume.pdf   # Verified Resume PDF for download
     └── images/
         ├── karthick.jpg            # Karthick's real portrait photo
         ├── project_aviation.jpg    # Aviation Safety AI Interface preview

@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthick S — AI/ML Engineer & Systems Builder</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Portfolio of Karthick S — AI/ML Engineer specializing in Computer Vision, Machine Learning Pipelines, Real-Time Inference, and Voice AI / LLM Systems. B.Tech CSE (AI & ML) distinction graduate from SRM IST.">
+  <meta name="keywords" content="Karthick S, AI/ML Engineer, Computer Vision, Machine Learning, Python, YOLOv8, OpenCV, FastAPI, Flask, SRM Institute of Science and Technology, Chennai">
+  <meta name="author" content="Karthick S">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karthick S — AI/ML Engineer Portfolio">
+  <meta property="og:description" content="Explore production-grade AI systems, real-time Computer Vision pipelines, and Voice LLM agents built by Karthick S.">
+  <meta property="og:image" content="assets/images/karthick.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23D91410'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='52' font-weight='900' fill='white'>KS</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons (CDN + fallback resilience) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Atmospheric Gradient & Noise Background Elements -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="mesh-blob mesh-blob-1"></div>
+    <div class="mesh-blob mesh-blob-2"></div>
+    <div class="mesh-blob mesh-blob-3"></div>
+  </div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Karthick S Portfolio Home">
+        <span class="brand-badge">KS</span>
+        <span>KARTHICK S</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#playground" class="nav-link">AI Demo</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle (Light / Dark) -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme Mode" title="Toggle Theme (Warm Editorial / Dark Cybernetic)">
+          <i data-lucide="moon" id="themeIcon"></i>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="assets/docs/Karthick_S_Resume.pdf" download="Karthick_S_Resume.pdf" class="btn-nav-cta" target="_blank" rel="noopener noreferrer">
+          <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+        <span style="font-family: var(--font-tech); font-weight: 800; font-size: 0.85rem; color: var(--accent-primary);">NAVIGATION</span>
+        <button id="closeMobileDrawer" style="color: var(--text-primary);"><i data-lucide="x"></i></button>
+      </div>
+      <a href="#hero" class="mobile-nav-link"><span>Home</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      <a href="#about" class="mobile-nav-link"><span>About</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      <a href="#skills" class="mobile-nav-link"><span>Skills Matrix</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      <a href="#projects" class="mobile-nav-link"><span>Flagship Projects</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      <a href="#playground" class="mobile-nav-link"><span>Interactive AI Demo</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      <a href="#experience" class="mobile-nav-link"><span>Experience & Internships</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      <a href="#education" class="mobile-nav-link"><span>Education & Certs</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      <a href="#contact" class="mobile-nav-link"><span>Contact Karthick</span> <i data-lucide="chevron-right" style="width: 18px;"></i></a>
+      
+      <div style="margin-top: 1rem; display: flex; gap: 0.75rem;">
+        <a href="assets/docs/Karthick_S_Resume.pdf" download="Karthick_S_Resume.pdf" class="btn btn-primary" style="flex: 1;">
+          <i data-lucide="file-text"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Column: Narrative & Hook -->
+          <div class="hero-content">
+            
+            <!-- Open to Opportunities Badge -->
+            <div class="status-pill">
+              <span class="status-indicator"></span>
+              <span>Available for AI/ML Roles • Chennai, India</span>
+            </div>
+
+            <div class="hero-title-wrapper">
+              <p class="hero-eyebrow">Hello, I am</p>
+              <h1 class="hero-main-title">KARTHICK S</h1>
+              <div class="hero-dynamic-role" aria-live="polite">
+                <span id="roleText">AI & Machine Learning Engineer</span>
+                <span class="typing-cursor"></span>
+              </div>
+            </div>
+
+            <p class="hero-description">
+              <strong>B.Tech CSE (AI & ML)</strong> graduate from <strong>SRM Institute of Science and Technology</strong> (8.24 CGPA — First Class with Distinction). I architect production-grade computer vision models, explainable machine learning frameworks, and ultra-low-latency voice AI agents.
+            </p>
+
+            <!-- CTA Button Group -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Projects</span>
+                <i data-lucide="arrow-down-right" style="width: 18px; height: 18px;"></i>
+              </a>
+              <a href="#playground" class="btn btn-secondary">
+                <i data-lucide="sparkles" style="width: 18px; height: 18px; color: var(--accent-primary);"></i>
+                <span>Live AI Demo</span>
+              </a>
+              <a href="assets/docs/Karthick_S_Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="file-text" style="width: 18px; height: 18px;"></i>
+                <span>Resume (PDF)</span>
+              </a>
+            </div>
+
+            <!-- Social Connect Links -->
+            <div class="hero-socials">
+              <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+                <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                <span>github.com/karthick-ctrl</span>
+              </a>
+              <a href="https://linkedin.com/in/karthick-s-38050a314" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+                <i data-lucide="linkedin" style="width: 16px; height: 16px;"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:karthick0email@gmail.com" class="social-pill" title="Send Email">
+                <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+                <span>karthick0email@gmail.com</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Right Column: Visual Portrait & Floating Bento Tags -->
+          <div class="hero-visual-card">
+            
+            <!-- Floating Badge 1: Real-time CV -->
+            <div class="floating-tech-badge floating-tech-badge-1">
+              <i data-lucide="eye" style="width: 16px; height: 16px; color: var(--accent-primary);"></i>
+              <div>
+                <div style="font-size: 0.68rem; color: var(--text-muted); line-height: 1;">VISION SYSTEM</div>
+                <div>YOLOv8 + 60 FPS</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: LLM Voice Agent -->
+            <div class="floating-tech-badge floating-tech-badge-2">
+              <i data-lucide="mic" style="width: 16px; height: 16px; color: var(--accent-primary);"></i>
+              <div>
+                <div style="font-size: 0.68rem; color: var(--text-muted); line-height: 1;">VOICE AI AGENT</div>
+                <div>Groq LLaMA 3.3 70B</div>
+              </div>
+            </div>
+
+            <!-- Portrait Frame -->
+            <div class="portrait-frame">
+              <img src="assets/images/karthick.jpg" alt="Karthick S — AI/ML Engineer" id="heroPhoto" loading="eager">
+              <div class="portrait-overlay-gradient"></div>
+              
+              <div class="portrait-caption-badge">
+                <div>
+                  <div class="caption-name">Karthick S</div>
+                  <div class="caption-meta">AI / ML Engineer • SRM IST</div>
+                </div>
+                <div style="display: flex; gap: 4px;">
+                  <span style="font-size: 0.75rem; background: var(--accent-subtle); color: var(--accent-primary); padding: 2px 8px; border-radius: 4px; font-weight: 800; font-family: var(--font-tech);">8.24 CGPA</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Hero Stats Strip Bento -->
+        <div class="hero-stats-strip">
+          <div class="stat-card">
+            <div class="stat-number">8.24</div>
+            <div class="stat-label">B.Tech CGPA (First Class Distinction)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Flagship Production AI Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">60+ FPS</div>
+            <div class="stat-label">Real-Time Computer Vision Inference</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">&lt;120ms</div>
+            <div class="stat-label">Spoken Voice AI Inference Loop</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION & CORE CAPABILITIES
+         ========================================================================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-label">Executive Overview</div>
+        <h2 class="section-title">Architecting <span class="highlight">Intelligent Systems</span> from Model to Deployment.</h2>
+        <p class="section-subtitle">A blend of computer vision research, machine learning pipelines, and robust backend engineering.</p>
+
+        <div class="about-grid">
+          <!-- Left Column: Story -->
+          <div class="about-narrative">
+            <p class="narrative-lead">
+              I am an AI & Machine Learning Engineer with a passion for transforming raw mathematical models and sensor streams into real-time, explainable, and reliable software.
+            </p>
+            <p class="narrative-body">
+              Graduating with First Class with Distinction in Computer Science (AI & ML) from SRM Institute of Science and Technology, I focus heavily on bridging state-of-the-art Deep Learning (YOLOv8, Dlib, LLaMA 3.3) with production-grade backend architectures (Flask, FastAPI, PostgreSQL).
+            </p>
+            <p class="narrative-body">
+              From building a 3-module aviation safety intelligence framework with Explainable AI (XAI) to creating sub-second conversational voice calling systems, I prioritize latency, accuracy, and interpretability in every line of code.
+            </p>
+          </div>
+
+          <!-- Right Column: Key Details Bento Card -->
+          <div class="about-details-card">
+            <div class="detail-row">
+              <div class="detail-icon"><i data-lucide="graduation-cap"></i></div>
+              <div class="detail-info">
+                <h4>Education & Honors</h4>
+                <p>B.Tech CSE (AI & ML) — SRM IST (8.24 CGPA, Distinction)</p>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+              <div class="detail-info">
+                <h4>Location & Mobility</h4>
+                <p>Chennai, India • Open to On-site, Hybrid & Remote Roles</p>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <div class="detail-icon"><i data-lucide="cpu"></i></div>
+              <div class="detail-info">
+                <h4>Core Focus Areas</h4>
+                <p>Computer Vision, Explainable AI (XAI), LLM Voice Agents, ML Pipelines</p>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <div class="detail-icon"><i data-lucide="layers"></i></div>
+              <div class="detail-info">
+                <h4>System Architecture</h4>
+                <p>FastAPI & Flask REST APIs, Database Query Optimization, OpenCV Pipelines</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Core Capabilities Bento Cards -->
+        <div class="capabilities-grid">
+          <div class="capability-card">
+            <div class="capability-icon"><i data-lucide="scan"></i></div>
+            <h3>Computer Vision & Detection</h3>
+            <p>End-to-end vision pipelines utilizing YOLOv8, OpenCV, and Dlib for real-time obstacle tracking, multi-lighting facial recognition, and geometric feature extraction.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="capability-icon"><i data-lucide="brain-circuit"></i></div>
+            <h3>ML Pipelines & Explainable AI</h3>
+            <p>Data preprocessing, feature scaling, anomaly detection (Random Forest, SVM), and model interpretability with XAI for mission-critical decisions.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="capability-icon"><i data-lucide="mic-2"></i></div>
+            <h3>LLMs & Voice Agents</h3>
+            <p>State-of-the-art conversational agents combining browser Web Speech APIs, Groq-hosted LLaMA 3.3 70B, and stateless asynchronous FastAPI backends.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS MATRIX
+         ========================================================================== */ -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-label">Technical Arsenal</div>
+        <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
+        <p class="section-subtitle">Engineered with modern tools across machine learning, system architecture, databases, and generative AI.</p>
+
+        <!-- Skills Matrix Grid -->
+        <div class="skills-matrix-grid">
+          
+          <!-- Card 1: Languages & Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-header-icon"><i data-lucide="code-2"></i></div>
+              <h3>Languages & Data</h3>
+            </div>
+            <div class="skill-pill-cloud">
+              <span class="skill-tag"><i data-lucide="check" style="width: 14px; color: var(--accent-primary);"></i> Python</span>
+              <span class="skill-tag"><i data-lucide="check" style="width: 14px; color: var(--accent-primary);"></i> SQL</span>
+              <span class="skill-tag"><i data-lucide="check" style="width: 14px; color: var(--accent-primary);"></i> MySQL</span>
+              <span class="skill-tag"><i data-lucide="check" style="width: 14px; color: var(--accent-primary);"></i> PostgreSQL</span>
+              <span class="skill-tag">Schema Design</span>
+              <span class="skill-tag">Normalization</span>
+              <span class="skill-tag">Query Optimization</span>
+              <span class="skill-tag">ER Diagrams</span>
+            </div>
+          </div>
+
+          <!-- Card 2: ML & Computer Vision -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-header-icon"><i data-lucide="eye"></i></div>
+              <h3>ML & Computer Vision</h3>
+            </div>
+            <div class="skill-pill-cloud">
+              <span class="skill-tag"><i data-lucide="sparkles" style="width: 14px; color: var(--accent-primary);"></i> YOLOv8</span>
+              <span class="skill-tag"><i data-lucide="sparkles" style="width: 14px; color: var(--accent-primary);"></i> OpenCV</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Dlib (68 Landmarks)</span>
+              <span class="skill-tag">HOG Features</span>
+              <span class="skill-tag">Random Forest & SVM</span>
+              <span class="skill-tag">Classification & Clustering</span>
+              <span class="skill-tag">Explainable AI (XAI)</span>
+            </div>
+          </div>
+
+          <!-- Card 3: NLP & Generative AI -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-header-icon"><i data-lucide="bot"></i></div>
+              <h3>NLP & Generative AI</h3>
+            </div>
+            <div class="skill-pill-cloud">
+              <span class="skill-tag"><i data-lucide="zap" style="width: 14px; color: var(--accent-primary);"></i> LLM Architecture</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">Groq LLaMA 3.3 70B</span>
+              <span class="skill-tag">Web Speech API</span>
+              <span class="skill-tag">SpeechRecognition / TTS</span>
+              <span class="skill-tag">Voice Calling Agents</span>
+              <span class="skill-tag">Stateless Loop Design</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Backend & Systems -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-header-icon"><i data-lucide="server"></i></div>
+              <h3>Backend & Architecture</h3>
+            </div>
+            <div class="skill-pill-cloud">
+              <span class="skill-tag"><i data-lucide="check" style="width: 14px; color: var(--accent-primary);"></i> Flask</span>
+              <span class="skill-tag"><i data-lucide="check" style="width: 14px; color: var(--accent-primary);"></i> FastAPI</span>
+              <span class="skill-tag">RESTful API Design</span>
+              <span class="skill-tag">Inference Endpoints</span>
+              <span class="skill-tag">Data Preprocessing</span>
+              <span class="skill-tag">OOP Principles</span>
+              <span class="skill-tag">DBMS Concepts</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Development & Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-header-icon"><i data-lucide="wrench"></i></div>
+              <h3>Tools & Workflows</h3>
+            </div>
+            <div class="skill-pill-cloud">
+              <span class="skill-tag"><i data-lucide="git-branch" style="width: 14px; color: var(--accent-primary);"></i> Git & GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Linux / Terminal</span>
+              <span class="skill-tag">Postman</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Engineering Practices -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-header-icon"><i data-lucide="shield-check"></i></div>
+              <h3>Methodologies & UI/UX</h3>
+            </div>
+            <div class="skill-pill-cloud">
+              <span class="skill-tag">UI/UX Wireframing</span>
+              <span class="skill-tag">Agile Sprint Delivery</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Model Metrics (F1, Precision)</span>
+              <span class="skill-tag">Cross-functional Collaboration</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SHOWCASE
+         ========================================================================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-label">Production Systems</div>
+        <h2 class="section-title">Flagship <span class="highlight">Engineering Projects</span></h2>
+        <p class="section-subtitle">Real-world AI implementations demonstrating computer vision pipelines, explainable models, and conversational voice systems.</p>
+
+        <!-- Projects Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="project-filter-btn active" data-filter="all">All Systems</button>
+          <button class="project-filter-btn" data-filter="cv">Computer Vision & Safety</button>
+          <button class="project-filter-btn" data-filter="voice">Voice & Generative AI</button>
+          <button class="project-filter-btn" data-filter="rag">RAG & Document AI</button>
+          <button class="project-filter-btn" data-filter="ml">ML & Backend</button>
+        </div>
+
+        <div class="projects-showcase-grid">
+
+          <!-- PROJECT 1: Aviation Safety Framework -->
+          <article class="project-card-large" data-category="cv ml">
+            <div class="project-media-col">
+              <div class="project-media-badges">
+                <span class="badge-flagship">Flagship System</span>
+                <span style="font-family: var(--font-tech); font-size: 0.75rem; font-weight: 700; background: rgba(0,0,0,0.7); color: #FFF; padding: 0.35rem 0.75rem; border-radius: 9999px;">Aviation AI</span>
+              </div>
+              <img src="assets/images/project_aviation.jpg" alt="Explainable & Adaptive AI Framework for Aviation Safety" loading="lazy">
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-meta-eyebrow">
+                  <span class="project-category-tag">Computer Vision • ML • Explainable AI</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">YOLOv8 + Flask</span>
+                </div>
+
+                <h3 class="project-title">Explainable & Adaptive AI Framework — Aviation Safety</h3>
+                <p class="project-description">
+                  A comprehensive 3-module intelligent aviation safety platform engineered to safeguard airport operations by detecting runway foreign objects in real-time, diagnosing black box telemetry anomalies, and predicting takeoff risk factors with high interpretability.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                    <span><strong>Runway Monitoring:</strong> YOLOv8 object detection model operating at 60+ FPS for immediate FOD (Foreign Object Debris) and runway vehicle identification.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                    <span><strong>Black Box & Risk Scoring:</strong> Integrated Random Forest and SVM algorithms to analyze multi-sensor flight and meteorological streams.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                    <span><strong>Flask REST API + XAI:</strong> Full end-to-end preprocessing, feature scaling, model inference endpoints, and Explainable AI (XAI) for transparent pilot decision support.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-chip">Python</span>
+                  <span class="tech-chip">YOLOv8</span>
+                  <span class="tech-chip">Flask</span>
+                  <span class="tech-chip">Scikit-learn</span>
+                  <span class="tech-chip">OpenCV</span>
+                  <span class="tech-chip">Explainable AI (XAI)</span>
+                </div>
+              </div>
+
+              <div class="project-actions-group">
+                <button class="btn btn-primary" onclick="openAviationModal()">
+                  <i data-lucide="play" style="width: 16px; height: 16px;"></i>
+                  <span>Architecture & Demo</span>
+                </button>
+                <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Real-Time Face Recognition System -->
+          <article class="project-card-large reverse" data-category="cv ml">
+            <div class="project-media-col">
+              <div class="project-media-badges">
+                <span class="badge-flagship" style="background: #2563EB;">Biometric AI</span>
+                <span style="font-family: var(--font-tech); font-size: 0.75rem; font-weight: 700; background: rgba(0,0,0,0.7); color: #FFF; padding: 0.35rem 0.75rem; border-radius: 9999px;">Real-Time</span>
+              </div>
+              <img src="assets/images/project_face.jpg" alt="Real-Time Face Recognition System Pipeline" loading="lazy">
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-meta-eyebrow">
+                  <span class="project-category-tag" style="color: #2563EB;">Biometric Computer Vision</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">Dlib + SVM</span>
+                </div>
+
+                <h3 class="project-title">Real-Time Face Recognition & Biometric Pipeline</h3>
+                <p class="project-description">
+                  A high-accuracy, robust biometric identification pipeline designed to perform continuous face detection, facial landmark alignment, and classification even under dynamic ambient lighting conditions and occlusions.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #2563EB;"></i>
+                    <span><strong>End-to-End Pipeline:</strong> OpenCV face detection → Dlib 68-point landmark extraction → 128D HOG feature encoding → Support Vector Machine (SVM) classification.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #2563EB;"></i>
+                    <span><strong>Lighting Invariance:</strong> Implemented histogram equalization and contrast stretching for consistent detection accuracy across day/night surveillance.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #2563EB;"></i>
+                    <span><strong>Optimized Latency:</strong> Tuned frame buffer downsampling and vectorization for silky real-time frame rates.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-chip">Python</span>
+                  <span class="tech-chip">OpenCV</span>
+                  <span class="tech-chip">NumPy</span>
+                  <span class="tech-chip">Dlib (68 Landmarks)</span>
+                  <span class="tech-chip">HOG Descriptors</span>
+                  <span class="tech-chip">Scikit-learn</span>
+                </div>
+              </div>
+
+              <div class="project-actions-group">
+                <button class="btn btn-primary" onclick="openFaceRecognitionModal()">
+                  <i data-lucide="layers" style="width: 16px; height: 16px;"></i>
+                  <span>Pipeline Breakdown</span>
+                </button>
+                <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: DocuMind AI (RAG Document Assistant) -->
+          <article class="project-card-large" data-category="rag ml">
+            <div class="project-media-col">
+              <div class="project-media-badges">
+                <span class="badge-flagship" style="background: #9333EA;">RAG Architecture</span>
+                <span style="font-family: var(--font-tech); font-size: 0.75rem; font-weight: 700; background: rgba(0,0,0,0.7); color: #FFF; padding: 0.35rem 0.75rem; border-radius: 9999px;">FAISS + LangChain</span>
+              </div>
+              <img src="assets/images/project_documind.jpg" alt="DocuMind AI — Intelligent RAG Document Assistant" loading="lazy">
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-meta-eyebrow">
+                  <span class="project-category-tag" style="color: #9333EA;">Generative AI • RAG • Vector Search</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">FastAPI + FAISS</span>
+                </div>
+
+                <h3 class="project-title">DocuMind AI — Intelligent RAG Document Intelligence</h3>
+                <p class="project-description">
+                  A production-grade Retrieval-Augmented Generation (RAG) assistant that allows users to upload complex PDFs, extracts dense embeddings, performs hybrid vector similarity search, and delivers cited, hallucination-free answers with sub-millisecond retrieval.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #9333EA;"></i>
+                    <span><strong>Semantic Vector Ingestion:</strong> Recursive character text chunking and dense vector indexing with FAISS & ChromaDB for sub-millisecond similarity lookup.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #9333EA;"></i>
+                    <span><strong>Citation Grounding:</strong> Injects retrieved context with exact page and section source tags, eliminating hallucinations and ensuring explainable responses.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #9333EA;"></i>
+                    <span><strong>FastAPI Async Endpoints:</strong> Asynchronous streaming inference loop with Groq / Gemini LLMs, re-ranking scores, and interactive PDF viewer synchronization.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-chip">Python</span>
+                  <span class="tech-chip">FastAPI</span>
+                  <span class="tech-chip">LangChain</span>
+                  <span class="tech-chip">FAISS</span>
+                  <span class="tech-chip">ChromaDB</span>
+                  <span class="tech-chip">LLM (Groq / Gemini)</span>
+                  <span class="tech-chip">PyPDF / OCR</span>
+                </div>
+              </div>
+
+              <div class="project-actions-group">
+                <button class="btn btn-primary" onclick="openDocuMindModal()">
+                  <i data-lucide="search" style="width: 16px; height: 16px;"></i>
+                  <span>Architecture &amp; RAG Flow</span>
+                </button>
+                <a href="#playground" class="btn btn-secondary" onclick="switchPlaygroundTab('documind')">
+                  <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #9333EA;"></i>
+                  <span>Try RAG Demo ↓</span>
+                </a>
+                <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                  <span>GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Voice AI Calling Agent - Karthick's Pizza -->
+          <article class="project-card-large reverse" data-category="voice ml">
+            <div class="project-media-col">
+              <div class="project-media-badges">
+                <span class="badge-flagship" style="background: #10B981;">Voice LLM</span>
+                <span style="font-family: var(--font-tech); font-size: 0.75rem; font-weight: 700; background: rgba(0,0,0,0.7); color: #FFF; padding: 0.35rem 0.75rem; border-radius: 9999px;">Groq LLaMA 3.3 70B</span>
+              </div>
+              <img src="assets/images/project_voice.jpg" alt="Web Calling Agent - Karthick's Pizza AI Voice System" loading="lazy">
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-meta-eyebrow">
+                  <span class="project-category-tag" style="color: #10B981;">Conversational Voice AI</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">FastAPI + Web Speech</span>
+                </div>
+
+                <h3 class="project-title">Web Calling Agent — Karthick’s Pizza AI</h3>
+                <p class="project-description">
+                  A lightning-fast, browser-based voice ordering assistant that handles natural spoken audio I/O and drives an interactive, stateless multi-turn conversation with an LLM-based order-taking persona.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #10B981;"></i>
+                    <span><strong>Near-Zero Latency:</strong> Leverages Groq-hosted LLaMA 3.3 70B inference to maintain natural spoken conversation rhythm with ~120ms token stream generation.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #10B981;"></i>
+                    <span><strong>Stateless Architecture:</strong> Client synchronizes dialogue context dynamically to a lean single <code>/chat</code> FastAPI endpoint, preventing server memory bloat.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #10B981;"></i>
+                    <span><strong>Browser Voice Engine:</strong> Direct Web Speech API integration for on-device speech recognition and expressive text-to-speech audio synthesis.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-stack">
+                  <span class="tech-chip">Python</span>
+                  <span class="tech-chip">FastAPI</span>
+                  <span class="tech-chip">Groq Cloud</span>
+                  <span class="tech-chip">LLaMA 3.3 70B</span>
+                  <span class="tech-chip">Web Speech API</span>
+                  <span class="tech-chip">Async Python</span>
+                </div>
+              </div>
+
+              <div class="project-actions-group">
+                <a href="#playground" class="btn btn-primary" onclick="switchPlaygroundTab('voice')">
+                  <i data-lucide="mic" style="width: 16px; height: 16px;"></i>
+                  <span>Try Live Voice Demo ↓</span>
+                </a>
+                <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LIVE INTERACTIVE AI PLAYGROUND (Key Differentiator)
+         ========================================================================== -->
+    <section id="playground" class="playground-section">
+      <div class="container">
+        <div class="section-label">Live Interactive Simulator</div>
+        <h2 class="section-title">Test Karthick's <span class="highlight">AI Systems</span></h2>
+        <p class="section-subtitle">Interact directly with live simulated models for the Voice Calling Agent and the Aviation Safety Risk Estimator right here in your browser.</p>
+
+        <div class="playground-wrapper">
+          
+          <!-- Playground Header Tabs -->
+          <div class="playground-header">
+            <div class="playground-nav-tabs">
+              <button class="playground-tab-btn active" id="tabVoiceBtn" onclick="switchPlaygroundTab('voice')">
+                <i data-lucide="mic" style="width: 16px; height: 16px;"></i>
+                <span>Voice Agent (Pizza Order)</span>
+              </button>
+              <button class="playground-tab-btn" id="tabDocuMindBtn" onclick="switchPlaygroundTab('documind')">
+                <i data-lucide="file-search" style="width: 16px; height: 16px; color: #9333EA;"></i>
+                <span>DocuMind (RAG Simulator)</span>
+              </button>
+              <button class="playground-tab-btn" id="tabAviationBtn" onclick="switchPlaygroundTab('aviation')">
+                <i data-lucide="plane" style="width: 16px; height: 16px;"></i>
+                <span>Aviation Risk Estimator</span>
+              </button>
+            </div>
+            
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-primary); display: flex; align-items: center; gap: 6px;">
+              <span class="status-indicator"></span>
+              <span>ENGINE: ACTIVE &amp; RESPONSIVE</span>
+            </div>
+          </div>
+
+          <!-- Playground Body: Tab 1 (Voice Calling Agent) -->
+          <div class="playground-body" id="voicePlaygroundPane">
+            <div class="voice-agent-demo">
+              
+              <!-- Chat Stream Simulator -->
+              <div class="chat-simulator-pane">
+                <div class="chat-history" id="voiceChatHistory">
+                  <div class="chat-msg agent">
+                    👋 <strong>Karthick's Pizza AI:</strong> Hello! Welcome to Karthick's Pizza. I'm your AI order assistant powered by LLaMA 3.3. What delicious pizza or sides would you like today?
+                  </div>
+                </div>
+
+                <form class="chat-input-bar" id="voiceChatForm" onsubmit="handleVoiceAgentSubmit(event)">
+                  <input type="text" id="voiceTextInput" placeholder="Type or click Speak (e.g. 'I want 1 large Margherita with olives')" autocomplete="off">
+                  <button type="button" id="micBtn" class="btn btn-secondary" style="padding: 0.65rem 0.9rem;" title="Use Microphone Voice Input" onclick="toggleVoiceSpeechRecognition()">
+                    <i data-lucide="mic" id="micIcon" style="width: 18px; height: 18px;"></i>
+                  </button>
+                  <button type="submit" class="btn btn-primary" style="padding: 0.65rem 1.1rem;">
+                    <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                  </button>
+                </form>
+              </div>
+
+              <!-- Voice Telemetry & Audio Control Panel -->
+              <div class="voice-controls-pane">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h4 style="font-family: var(--font-tech); font-size: 0.9rem; text-transform: uppercase;">Audio Waveform &amp; Latency</h4>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-primary);">118ms Latency</span>
+                  </div>
+
+                  <!-- Waveform Visualizer -->
+                  <div class="voice-wave-visualizer" id="waveVisualizer">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                  </div>
+                </div>
+
+                <!-- Live Order Tracking Box -->
+                <div class="order-summary-box">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem; font-weight: 800;">
+                    <span>CURRENT ORDER STATE</span>
+                    <span style="color: var(--accent-emerald);">SYNCED</span>
+                  </div>
+                  <div id="orderItemsList" style="color: var(--text-secondary); font-size: 0.85rem;">
+                    • 1x Large Pizza (Pepperoni / Veggie Deluxe)<br>
+                    • Status: Order Intake Active
+                  </div>
+                </div>
+
+                <!-- Quick Prompt Chips -->
+                <div>
+                  <div style="font-size: 0.75rem; font-family: var(--font-tech); color: var(--text-muted); margin-bottom: 0.5rem;">QUICK TEST PHRASES:</div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                    <button class="skill-tag" type="button" onclick="sendQuickPrompt('I want 2 large Pepperoni pizzas and garlic bread')">"2 Pepperoni pizzas &amp; bread"</button>
+                    <button class="skill-tag" type="button" onclick="sendQuickPrompt('What special toppings do you have?')">"What toppings?"</button>
+                    <button class="skill-tag" type="button" onclick="sendQuickPrompt('Deliver to 142 Baker St, Chennai')">"Deliver to Chennai"</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Playground Body: Tab 2 (DocuMind AI RAG Document Assistant) -->
+          <div class="playground-body" id="documindPlaygroundPane" style="display: none;">
+            <div class="documind-demo">
+              
+              <!-- Document Viewer & Chat Pane -->
+              <div class="chat-simulator-pane">
+                <div style="padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+                  <span class="doc-badge-tag"><i data-lucide="file-text" style="width: 14px;"></i> Active Document:</span>
+                  <select id="docSelect" onchange="handleDocChange()" style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 4px 8px; font-family: var(--font-tech); font-size: 0.8rem; color: var(--text-primary);">
+                    <option value="aviation">Aviation_Safety_System_Report.pdf</option>
+                    <option value="resume">Karthick_S_AI_ML_Profile.pdf</option>
+                    <option value="voice">Voice_AI_Groq_Benchmark.pdf</option>
+                  </select>
+                </div>
+
+                <div class="chat-history" id="documindChatHistory">
+                  <div class="chat-msg agent">
+                    📄 <strong>DocuMind RAG Agent:</strong> Loaded document into FAISS vector index (128 embeddings). Ask any question or test extraction from this document!
+                  </div>
+                </div>
+
+                <form class="chat-input-bar" onsubmit="handleDocuMindSubmit(event)">
+                  <input type="text" id="documindTextInput" placeholder="Ask question (e.g. 'What ML algorithms are used in Aviation Safety?')" autocomplete="off">
+                  <button type="submit" class="btn btn-primary" style="padding: 0.65rem 1.1rem; background: #9333EA; border-color: #9333EA;">
+                    <i data-lucide="search" style="width: 16px; height: 16px;"></i>
+                  </button>
+                </form>
+              </div>
+
+              <!-- Retrieval Telemetry & Citation Inspector -->
+              <div class="voice-controls-pane">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                    <h4 style="font-family: var(--font-tech); font-size: 0.9rem; text-transform: uppercase;">Vector Similarity &amp; Grounding</h4>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #9333EA;" id="docRetrievalLatency">42ms Retrieval</span>
+                  </div>
+
+                  <div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-family: var(--font-tech);">
+                      <span>Dense Cosine Match Score:</span>
+                      <strong id="similarityScoreVal" style="color: #9333EA;">96.4% Match</strong>
+                    </div>
+                    <div class="similarity-bar-bg">
+                      <div class="similarity-bar-fill" id="similarityBarFill" style="width: 96.4%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Citation Source Box -->
+                <div style="margin-top: 1rem;">
+                  <div style="font-family: var(--font-tech); font-size: 0.75rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.4rem;">
+                    RETRIEVED CITATION SOURCE SNIPPET:
+                  </div>
+                  <div class="rag-citation-card" id="citationSnippetBox">
+                    <strong style="color: var(--accent-primary);">[Page 3, Section 2.1 — Aviation Architecture]:</strong><br>
+                    "The system consolidates real-time YOLOv8 bounding box obstacle detection with Random Forest &amp; SVM anomaly detection on black box flight telemetry..."
+                  </div>
+                </div>
+
+                <!-- Quick Prompts for DocuMind -->
+                <div style="margin-top: 1rem;">
+                  <div style="font-size: 0.75rem; font-family: var(--font-tech); color: var(--text-muted); margin-bottom: 0.5rem;">SUGGESTED RAG QUERIES:</div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                    <button class="skill-tag" type="button" onclick="sendDocuMindPrompt('What ML algorithms are used in Aviation Safety?')">"Aviation ML models?"</button>
+                    <button class="skill-tag" type="button" onclick="sendDocuMindPrompt('What is Karthick\'s CGPA and degree?')">"Karthick's CGPA?"</button>
+                    <button class="skill-tag" type="button" onclick="sendDocuMindPrompt('How does the voice agent achieve low latency?')">"Voice AI latency?"</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Playground Body: Tab 3 (Aviation Risk Scoring Estimator) -->
+          <div class="playground-body" id="aviationPlaygroundPane" style="display: none;">
+            <div class="aviation-demo">
+              
+              <!-- Sliders Control Panel -->
+              <div class="sliders-control-panel">
+                <h4 style="font-family: var(--font-tech); font-size: 1rem; text-transform: uppercase;">Simulate Flight &amp; Runway Telemetry</h4>
+
+                <div class="slider-group">
+                  <div class="slider-label">
+                    <span>Detected Runway FOD Obstacles (YOLOv8)</span>
+                    <span class="val" id="valObstacles">0 Objects</span>
+                  </div>
+                  <input type="range" id="sliderObstacles" min="0" max="6" value="0" oninput="updateAviationSimulation()">
+                </div>
+
+                <div class="slider-group">
+                  <div class="slider-label">
+                    <span>Crosswind Velocity (Knots)</span>
+                    <span class="val" id="valWind">12 kts</span>
+                  </div>
+                  <input type="range" id="sliderWind" min="0" max="65" value="12" oninput="updateAviationSimulation()">
+                </div>
+
+                <div class="slider-group">
+                  <div class="slider-label">
+                    <span>Black Box Engine Telemetry Anomaly Index</span>
+                    <span class="val" id="valAnomaly">0.05 (Normal)</span>
+                  </div>
+                  <input type="range" id="sliderAnomaly" min="0" max="100" value="5" oninput="updateAviationSimulation()">
+                </div>
+
+                <div class="slider-group">
+                  <div class="slider-label">
+                    <span>Runway Surface Friction Condition</span>
+                    <span class="val" id="valFriction">Dry / Optimal</span>
+                  </div>
+                  <input type="range" id="sliderFriction" min="1" max="3" value="1" oninput="updateAviationSimulation()">
+                </div>
+              </div>
+
+              <!-- Live Radar & Risk Assessment Output -->
+              <div class="radar-telemetry-panel">
+                <div class="risk-meter-display">
+                  <div style="font-family: var(--font-tech); font-size: 0.85rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase;">
+                    XAI Comprehensive Risk Probability
+                  </div>
+                  <div class="risk-gauge-score" id="aviationRiskScore">4.2%</div>
+                  <div class="risk-verdict-badge" id="aviationVerdictBadge">LOW RISK • RUNWAY CLEAR</div>
+                </div>
+
+                <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+                  <div style="font-family: var(--font-tech); font-weight: 800; font-size: 0.85rem; margin-bottom: 0.4rem;">EXPLAINABLE AI (XAI) DECISION BREAKDOWN:</div>
+                  <div id="xaiBreakdownText" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+                    • YOLOv8 reports zero runway intrusions.<br>
+                    • Crosswind within permissible standard FAA envelope.<br>
+                    • Engine vibration anomaly score within nominal 99.8% baseline.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WORK EXPERIENCE & INTERNSHIPS TIMELINE
+         ========================================================================== -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-label">Professional Trajectory</div>
+        <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+        <p class="section-subtitle">Hands-on experience delivering machine learning endpoints, REST APIs, and UI/UX deliverables in engineering teams.</p>
+
+        <div class="timeline-container">
+
+          <!-- Experience 1: Trija Mind -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Development Intern</h3>
+                  <div class="company-name">Trija Mind</div>
+                </div>
+                <span class="date-pill">Dec 2025 — Feb 2026</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Built robust Python + Flask REST APIs integrated with MySQL and PostgreSQL backends to support internal AI/ML project requirements.</li>
+                <li>Engineered high-throughput data preprocessing pipelines and exposed high-availability model inference endpoints.</li>
+                <li>Collaborated closely with cross-functional engineering teams on debugging, SQL query optimization, schema indexing, and delivering sprint features on schedule.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2: Internways -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Design Intern</h3>
+                  <div class="company-name">Internways, Chennai</div>
+                </div>
+                <span class="date-pill">Jul 2024 — Dec 2024</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Designed high-fidelity UI/UX wireframes, digital creative assets, and interactive web mockups.</li>
+                <li>Collaborated closely with product and project teams to translate business requirements into intuitive and engaging digital user experiences.</li>
+                <li>Established consistent design system principles and responsive layout specifications.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & CERTIFICATIONS
+         ========================================================================== -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title">Education & <span class="highlight">Certifications</span></h2>
+        <p class="section-subtitle">Academic foundations and verified professional credentials in machine learning and software engineering.</p>
+
+        <div class="edu-cert-grid">
+          
+          <!-- Education Card -->
+          <div class="education-card">
+            <div>
+              <div class="edu-badge-row">
+                <span style="font-family: var(--font-tech); font-size: 0.8125rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Undergraduate Degree</span>
+                <span class="gpa-tag">8.24 CGPA (First Class with Distinction)</span>
+              </div>
+
+              <h3 class="degree-title">B.Tech — Computer Science &amp; Engineering (AI &amp; ML)</h3>
+              <div class="institution-title">SRM Institute of Science and Technology, Chennai</div>
+
+              <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                Graduated with First Class with Distinction. Focused on Deep Learning architectures, statistical machine learning, computer vision, and high-performance algorithms.
+              </p>
+
+              <div style="font-family: var(--font-tech); font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-top: 1.5rem;">
+                Core Academic Coursework:
+              </div>
+              <div class="coursework-chips">
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">DBMS &amp; SQL</span>
+                <span class="skill-tag">DSA (Algorithms)</span>
+                <span class="skill-tag">Digital Image Processing</span>
+                <span class="skill-tag">OOP</span>
+                <span class="skill-tag">Computer Networks</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-family: var(--font-tech); font-size: 0.85rem; color: var(--text-secondary);">Graduated: August 16, 2026</span>
+              <span style="font-family: var(--font-tech); font-size: 0.85rem; font-weight: 800; color: var(--accent-primary);">Chennai Campus</span>
+            </div>
+          </div>
+
+          <!-- Certifications Bento List -->
+          <div>
+            <div style="font-family: var(--font-tech); font-size: 0.875rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-primary); margin-bottom: 1.25rem;">
+              Verified Certifications
+            </div>
+
+            <div class="cert-cards-list">
+              <div class="cert-card-item">
+                <div class="cert-icon"><i data-lucide="award"></i></div>
+                <div class="cert-info">
+                  <h4>Machine Learning</h4>
+                  <div class="cert-issuer">NPTEL National Certification</div>
+                </div>
+              </div>
+
+              <div class="cert-card-item">
+                <div class="cert-icon"><i data-lucide="code"></i></div>
+                <div class="cert-info">
+                  <h4>Programming in Java</h4>
+                  <div class="cert-issuer">NPTEL National Certification</div>
+                </div>
+              </div>
+
+              <div class="cert-card-item">
+                <div class="cert-icon"><i data-lucide="network"></i></div>
+                <div class="cert-info">
+                  <h4>Demystifying Networking</h4>
+                  <div class="cert-issuer">NPTEL National Certification</div>
+                </div>
+              </div>
+
+              <div class="cert-card-item">
+                <div class="cert-icon"><i data-lucide="file-badge"></i></div>
+                <div class="cert-info">
+                  <h4>Diploma in Python, C, C++, Java, HTML</h4>
+                  <div class="cert-issuer">WINSOFT Certification</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & CONNECT SECTION
+         ========================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-label">Let's Connect</div>
+        <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+        <p class="section-subtitle">Interested in discussing AI engineering opportunities, computer vision projects, or collaborating? Drop a message below!</p>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-methods-list">
+              
+              <!-- Email Card -->
+              <div class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="method-icon"><i data-lucide="mail"></i></div>
+                  <div class="method-details">
+                    <h4>Direct Email</h4>
+                    <p>karthick0email@gmail.com</p>
+                  </div>
+                </div>
+                <button class="btn-copy" onclick="copyToClipboard('karthick0email@gmail.com', 'Email copied to clipboard!')">Copy</button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="method-icon"><i data-lucide="phone"></i></div>
+                  <div class="method-details">
+                    <h4>Phone / WhatsApp</h4>
+                    <p>+91 9092823613</p>
+                  </div>
+                </div>
+                <button class="btn-copy" onclick="copyToClipboard('+919092823613', 'Phone number copied!')">Copy</button>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <a href="https://linkedin.com/in/karthick-s-38050a314" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="method-icon"><i data-lucide="linkedin"></i></div>
+                  <div class="method-details">
+                    <h4>LinkedIn</h4>
+                    <p>linkedin.com/in/karthick-s-38050a314</p>
+                  </div>
+                </div>
+                <i data-lucide="arrow-up-right" style="color: var(--text-muted);"></i>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="method-icon"><i data-lucide="github"></i></div>
+                  <div class="method-details">
+                    <h4>GitHub Codebase</h4>
+                    <p>github.com/karthick-ctrl</p>
+                  </div>
+                </div>
+                <i data-lucide="arrow-up-right" style="color: var(--text-muted);"></i>
+              </a>
+
+              <!-- Location Card -->
+              <div class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                  <div class="method-details">
+                    <h4>Location</h4>
+                    <p>Chennai, Tamil Nadu, India (IST)</p>
+                  </div>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald);" id="chennaiTime">IST</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Send a Direct Message</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 2rem;">
+              Fill in your details and message. I will respond to your inquiry within 24 hours.
+            </p>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="e.g. john@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input type="text" id="contactSubject" class="form-control" placeholder="AI/ML Role Inquiry / Project Discussion" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" class="form-control" placeholder="Hi Karthick, I reviewed your aviation safety and voice AI projects..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h3>KARTHICK S</h3>
+          <p>AI/ML Engineer specializing in Computer Vision, Machine Learning Pipelines, and Voice AI Systems. Graduated First Class with Distinction from SRM Institute of Science and Technology.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="#about">About</a>
+            <a href="#skills">Skills Matrix</a>
+            <a href="#projects">Flagship Projects</a>
+            <a href="#playground">Interactive AI Demo</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education &amp; Certifications</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-links-list">
+            <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer">GitHub (karthick-ctrl)</a>
+            <a href="https://linkedin.com/in/karthick-s-38050a314" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            <a href="mailto:karthick0email@gmail.com">karthick0email@gmail.com</a>
+            <a href="assets/docs/Karthick_S_Resume.pdf" download="Karthick_S_Resume.pdf">Download Resume (PDF)</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Karthick S. All rights reserved. Crafted with precision &amp; high performance.
+        </div>
+        <a href="#hero" class="btn-back-to-top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up" style="width: 16px; height: 16px;"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+  <!-- Modal 1: Aviation Project Deep Dive -->
+  <div class="modal-backdrop" id="aviationModal" onclick="handleBackdropClick(event, 'aviationModal')">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 style="font-size: 1.25rem;">Aviation Safety AI Framework — Deep Architecture</h3>
+        <button class="modal-close-btn" onclick="closeModal('aviationModal')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/project_aviation.jpg" alt="Aviation System" style="border-radius: var(--radius-md); margin-bottom: 1.5rem; width: 100%;">
+        <h4 style="font-family: var(--font-tech); color: var(--accent-primary); margin-bottom: 0.5rem;">SYSTEM ARCHITECTURE &amp; MODULES</h4>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.65;">
+          This platform addresses runway hazard prevention by consolidating 3 mission-critical AI components into a unified Flask REST API interface:
+        </p>
+        <ul style="display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          <li><strong>Module 1 — Runway Vision:</strong> Fine-tuned YOLOv8 bounding box detector processing 60 FPS live video feeds for luggage carts, maintenance workers, wildlife, and debris.</li>
+          <li><strong>Module 2 — Anomaly Telemetry:</strong> Multi-sensor classifier combining Random Forest and Support Vector Machines to detect abnormal flight trajectory and engine pressure oscillations.</li>
+          <li><strong>Module 3 — Takeoff Risk &amp; XAI:</strong> Logistic Regression &amp; Tree-based risk scoring that explains feature weights (SHAP values) to airport dispatchers.</li>
+        </ul>
+        <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+          <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i data-lucide="github"></i> View GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Face Recognition Pipeline Modal -->
+  <div class="modal-backdrop" id="faceModal" onclick="handleBackdropClick(event, 'faceModal')">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 style="font-size: 1.25rem;">Face Recognition Pipeline — End-to-End Flow</h3>
+        <button class="modal-close-btn" onclick="closeModal('faceModal')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/project_face.jpg" alt="Face Recognition Pipeline" style="border-radius: var(--radius-md); margin-bottom: 1.5rem; width: 100%;">
+        <h4 style="font-family: var(--font-tech); color: var(--accent-primary); margin-bottom: 0.5rem;">PIPELINE STAGES &amp; MATHEMATICAL FORMULATION</h4>
+        <div style="display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;">
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>1. OpenCV Haar / DNN Detection:</strong> Locates bounding box coordinates in raw video frames with spatial downscaling.
+          </div>
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>2. Dlib 68 Facial Landmarks:</strong> Standardizes eye, nose, and jaw fiducial coordinates for affine transformation and rotational alignment.
+          </div>
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>3. HOG 128D Vector Extraction:</strong> Generates Histogram of Oriented Gradients capturing structural facial contour geometry invariant to skin tone and lighting.
+          </div>
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>4. SVM Decision Hyperplane:</strong> Multi-class Radial Basis Function (RBF) Support Vector Machine computes classification probabilities.
+          </div>
+        </div>
+        <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+          <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i data-lucide="github"></i> View GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: DocuMind AI RAG Architecture Modal -->
+  <div class="modal-backdrop" id="documindModal" onclick="handleBackdropClick(event, 'documindModal')">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 style="font-size: 1.25rem;">DocuMind AI — RAG Architecture &amp; Vector Pipeline</h3>
+        <button class="modal-close-btn" onclick="closeModal('documindModal')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/images/project_documind.jpg" alt="DocuMind AI Architecture" style="border-radius: var(--radius-md); margin-bottom: 1.5rem; width: 100%;">
+        <h4 style="font-family: var(--font-tech); color: #9333EA; margin-bottom: 0.5rem;">RETRIEVAL-AUGMENTED GENERATION (RAG) STAGES</h4>
+        <div style="display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;">
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>1. Ingestion &amp; Semantic Chunking:</strong> Extracts raw text from multi-page PDFs using PyPDF and applies RecursiveCharacterTextSplitter (chunk size: 800, overlap: 150) preserving section context.
+          </div>
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>2. Dense Vector Embeddings:</strong> Computes high-dimensional dense embeddings and indexes into FAISS (Facebook AI Similarity Search) with IndexFlatIP / Cosine metric.
+          </div>
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>3. Hybrid Similarity Search &amp; Re-ranking:</strong> Top-K retrieved chunks are filtered, re-ranked based on query intent similarity, and matched to specific page coordinates.
+          </div>
+          <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+            <strong>4. Context-Injected Generation:</strong> Prompts the LLM with strict grounding instructions: answer strictly based on retrieved context and append verifiable <code>[Source X, Page Y]</code> citation anchors.
+          </div>
+        </div>
+        <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+          <a href="https://github.com/karthick-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: #9333EA; border-color: #9333EA;">
+            <i data-lucide="github"></i> View GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

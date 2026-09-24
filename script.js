@@ -550,13 +550,13 @@ window.handleDocChange = function() {
   } else if (val === 'resume') {
     chatHistory.innerHTML = `
       <div class="chat-msg agent">
-        📄 <strong>DocuMind:</strong> Loaded <em>Karthick_S_AI_ML_Profile.pdf</em> (SRM IST, AI & ML Degree, CGPA 8.24). Ready for questions!
+        📄 <strong>DocuMind:</strong> Loaded <em>Karthick_S_AI_ML_Profile.pdf</em> (SRM IST, AI & ML Degree, First Class with Distinction). Ready for questions!
       </div>
     `;
     if (citationSnippet) {
       citationSnippet.innerHTML = `
         <strong style="color: var(--accent-primary);">[Page 1, Section: Education &amp; Skills]:</strong><br>
-        "B.Tech CSE (AI &amp; ML) graduate from SRM Institute of Science and Technology (CGPA: 8.24, First Class with Distinction). Skilled in Python, YOLOv8, OpenCV, FastAPI, and SQL..."
+        "B.Tech CSE (AI &amp; ML) graduate from SRM Institute of Science and Technology (First Class with Distinction). Skilled in Python, YOLOv8, OpenCV, FastAPI, and SQL..."
       `;
     }
     if (simScore) simScore.textContent = '98.8% Match';
@@ -620,10 +620,10 @@ function processDocuMindQuery(queryText) {
     matchPercentage = '97.8%';
     citation = `<strong style="color: #9333EA;">[Page 4, Section 3.2 — Core Models]:</strong><br>"YOLOv8 executes at 60 FPS for runway FOD detection; Random Forest &amp; SVM classify multi-sensor black box anomalies, integrated into a Flask REST API with Explainable AI (XAI)."`;
     reply = `According to <strong>[Aviation_Safety_Report.pdf, Page 4]</strong>, the framework uses: 1) <strong>YOLOv8</strong> for real-time runway obstacle tracking at 60 FPS, 2) <strong>Random Forest &amp; SVM</strong> for multi-parameter telemetry anomaly classification, and 3) <strong>Explainable AI (XAI)</strong> for pilot decision interpretability.`;
-  } else if (lower.includes('karthick') || lower.includes('cgpa') || lower.includes('degree') || lower.includes('college') || lower.includes('education') || lower.includes('srm')) {
+  } else if (lower.includes('karthick') || lower.includes('degree') || lower.includes('college') || lower.includes('education') || lower.includes('srm') || lower.includes('distinction') || lower.includes('cgpa')) {
     matchPercentage = '99.2%';
-    citation = `<strong style="color: #9333EA;">[Page 1, Section: Education]:</strong><br>"B.Tech Computer Science &amp; Engineering (AI &amp; ML), SRM Institute of Science and Technology, Chennai. CGPA: 8.24 — First Class with Distinction (Graduated Aug 2026)."`;
-    reply = `Based on <strong>[Karthick_S_AI_ML_Profile.pdf, Page 1]</strong>, Karthick holds a <strong>B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</strong> from <strong>SRM Institute of Science and Technology</strong> with a <strong>8.24 CGPA (First Class with Distinction)</strong>.`;
+    citation = `<strong style="color: #9333EA;">[Page 1, Section: Education]:</strong><br>"B.Tech Computer Science &amp; Engineering (AI &amp; ML), SRM Institute of Science and Technology, Chennai. First Class with Distinction (Graduated Aug 2026)."`;
+    reply = `Based on <strong>[Karthick_S_AI_ML_Profile.pdf, Page 1]</strong>, Karthick holds a <strong>B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</strong> from <strong>SRM Institute of Science and Technology</strong>, awarded <strong>First Class with Distinction</strong>.`;
   } else if (lower.includes('voice') || lower.includes('latency') || lower.includes('groq') || lower.includes('llama') || lower.includes('pizza')) {
     matchPercentage = '96.5%';
     citation = `<strong style="color: #9333EA;">[Page 2, Section: Architecture Flow]:</strong><br>"Browser Web Speech APIs handle audio capture, dispatching stateless turn history to FastAPI backend powered by Groq-hosted LLaMA 3.3 70B generating responses in ~120ms."`;

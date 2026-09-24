@@ -17,7 +17,7 @@
   3. *DocuMind AI — RAG Document Intelligence* (Python, FastAPI, LangChain, FAISS, Vector Search)
   4. *Web Calling Agent — Karthick’s Pizza* (FastAPI, Groq LLaMA 3.3 70B, Web Speech API)
 - **Comprehensive Skills Matrix**: Categorized grid of Machine Learning, Computer Vision, Generative AI, Backend, Databases, and Developer Tools.
-- **Academic Distinction & Work Experience**: Showcases B.Tech CSE (AI & ML) from SRM IST (8.24 CGPA — First Class with Distinction) and internships at Trija Mind & Internways.
+- **Academic Distinction & Work Experience**: Showcases B.Tech CSE (AI & ML) from SRM IST (First Class with Distinction) and internships at Trija Mind & Internways.
 - **Dual Theme Support**: Warm Editorial Cream ☀️ & Cybernetic Midnight Dark 🌙 with persistent `localStorage` preference.
 - **Interactive Modals & Utilities**: Architecture deep dives, one-click copy for email with toast alerts, and direct contact form.
 
